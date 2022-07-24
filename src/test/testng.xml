@@ -1,0 +1,40 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="Automation Suite"  parallel="tests">
+    <test name="Scenario 1 ChromeTests" >
+        <parameter name="browser" value="chrome">
+        </parameter>
+
+        <classes>
+            <class name="SwagLabs.FirstScenario" />
+        </classes>
+    </test>
+
+    <test name="Scenario 1 FirefoxTest">
+        <parameter name="browser" value="firefox">
+        </parameter>
+
+        <classes>
+            <class name="SwagLabs.FirstScenario" />
+        </classes>
+    </test>
+
+
+    <test name="Scenario 2 FirefoxTest">
+        <parameter name="browser" value="firefox">
+        </parameter>
+
+        <classes>
+            <class name="SwagLabs.ScenarioTwo" />
+        </classes>
+    </test>
+    <test name="Scenario 2 ChromeTest">
+        <parameter name="browser" value="chrome">
+        </parameter>
+
+        <classes>
+            <class name="SwagLabs.ScenarioTwo" />
+        </classes>
+    </test>
+
+</suite>

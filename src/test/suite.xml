@@ -1,0 +1,4 @@
+<suite name="TAG Suite">
+    <parameter name="environment"  value="qa"/>
+    <test name="Simple example"/>
+</suite>
